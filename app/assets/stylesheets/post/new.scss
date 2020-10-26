@@ -1,0 +1,38 @@
+
+.new-post {
+  background-color:#ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin: 20px;
+  padding: 40px;
+  width: 60vw;
+  border:1px solid olive;
+  border-radius: 10%;
+}
+
+.posts-text{
+  width: 100%;
+}
+
+.post-btn-contents{
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 30%;
+
+
+}
+
+.post-btn {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
+  color: #000000;
+  padding: 5px 80px;
+  margin: 20px;
+  height: 50px;
+}
