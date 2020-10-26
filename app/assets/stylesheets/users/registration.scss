@@ -1,0 +1,72 @@
+.devise{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title{
+  font-family: 'Quicksand', sans-serif;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.new_user {
+  border: 4px double #000000;
+  width: 100%;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.name-form{
+  padding-top: 20px;
+}
+
+.form-group {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px 0 0;
+  color: #000000;
+}
+
+.textarea {
+  width: 50%;
+ }
+.actions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit-btn {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 5px 80px;
+  margin: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
+  color: #000000;
+}
+
+#error_explanation{
+  color: #660000;
+  text-align: center;
+  margin: 15%;
+}
+
+.input-text {
+  border-radius: 0.67em;
+  height: 120px;
+
+}
