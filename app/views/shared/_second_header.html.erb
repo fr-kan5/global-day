@@ -1,0 +1,15 @@
+<header class="header-second">
+
+   <div class='main-bar-contents'> 
+    <p class="title">
+    <%= link_to image_tag("header-logo.jpg", class:"site-icon"), "/" %> 
+
+
+  <ul class="header-link">
+    <li><%= link_to '新規投稿', new_post_path, class:'post-new' %></li>
+    <li><%= link_to'チャットする', "#", class: 'chat-new'%>
+    <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+  </ul>
+
+  </div>
+</header>
