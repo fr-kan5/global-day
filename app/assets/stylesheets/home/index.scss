@@ -1,0 +1,41 @@
+
+.home-img {
+  background-image: image-url("home.jpg");
+  background-size: cover;
+
+}
+
+.user-top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.login {
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 15px 80px;
+  margin-bottom: 50px;
+  margin-top: 30%;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
+  color: #000000;
+}
+
+.sign-up {
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 15px 80px;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+  font-family: 'Quicksand', sans-serif;
+  color: #000000;
+}
