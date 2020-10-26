@@ -5,5 +5,6 @@ class Post < ApplicationRecord
     validates :title
     validates :text
     validates :place
+    validates :image
   end
 end
