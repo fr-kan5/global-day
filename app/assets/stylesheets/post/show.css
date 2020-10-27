@@ -1,0 +1,82 @@
+.show-page {
+  display: flex;
+
+}
+
+.show_post {
+  padding: 10% 30%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.title_show {
+text-align: center;
+}
+
+.image_wrapper{
+  display: flex;
+  justify-content: center;
+}
+.image_show{
+  width: 65vh;
+  text-align: center;
+}
+
+.show-text {
+  word-wrap: normal;
+}
+
+.post-user-name {
+  font-weight: bold;
+}
+.show-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-btn {
+  text-align: center;
+  border-radius: 30px;
+  background-color: aqua;
+  width: 25%;
+  padding: 1%;
+  margin: 1%;
+}
+
+.user-btn {
+  text-align: center;
+  background-color: aqua;
+  border-radius: 30px;
+  width: 20%;
+  padding: 1%;
+  margin: 1%;
+}
+
+.user-icon{
+  width: 3vw;
+}
+
+.delete {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.edit {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.chatroom {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
