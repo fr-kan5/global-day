@@ -30,7 +30,7 @@
   <% else %>
   <div class="user-btn">
     <%= image_tag "edit.png", class:"user-icon"%>
-    <%= link_to 'EDIT', "#", class:"edit" %>
+    <%= link_to 'EDIT', edit_post_path(@post.id) , class:"edit" %>
   </div>
 
   <div class="user-btn">
