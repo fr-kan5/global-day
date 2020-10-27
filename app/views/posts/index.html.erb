@@ -3,8 +3,11 @@
 
 <div class="card__wrapper">
   <% @posts.each do |post| %>
-    <div class="card">
-      <%= image_tag post.image, class:"post-img" if post.image.attached?%>
+    
+      <div class="card">
+      <%= link_to post_path(post.id) do %>
+        <%= image_tag post.image, class:"post-img" if post.image.attached?%>
+      <%end%>
 
       <div class="post_body">
         <div class="card__body">
@@ -22,12 +25,13 @@
 
         <div class="post-text">
           <p class="post-text"><%= truncate(post.text, :length => 80) do %> 
-          <%= link_to "...more", "#" %>
+          <%= link_to "...more", post_path(post.id) %>
           </p><%end%>
         </div> 
       </div>
 
     </div>
+
   <% end %>
 </div>
 
