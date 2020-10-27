@@ -1,0 +1,41 @@
+<%= render 'shared/second_header' %>
+
+<div class="show_page">
+  <div class="show_post">
+  <h2 class="title_show">
+    <%= @post.title%>
+  </h2>
+  <div class="image-wapper">
+  <%= image_tag @post.image, class:"image_show" %>
+  </div>
+  <span class="like-btn">
+    <%= image_tag "like.png", class:"like-icon" %> 
+  </span>
+
+  <div class="show-text">
+  <%= @post.text%>
+  </div>
+
+  <div class="post-user-name">
+  <%= @post.user.name %>
+  </div>
+  </div>
+
+  <div class="show-btn">
+  <% unless user_signed_in? && current_user == @post.user%>
+  <div class="chat-btn">
+  <%= image_tag "chatroom.png", class:"user-icon" %> 
+    <%= link_to 'CHAT ROOM', "#", class:"chatroom" %>
+  </div>
+  <% else %>
+  <div class="user-btn">
+    <%= image_tag "edit.png", class:"user-icon"%>
+    <%= link_to 'EDIT', "#", class:"edit" %>
+  </div>
+
+  <div class="user-btn">
+   <%= image_tag "garbage.png", class:"user-icon" %> 
+    <%= link_to 'DELETE', "#", method: :destroy, class:'delete' %>
+  </div>
+  <% end %>
+</div>
