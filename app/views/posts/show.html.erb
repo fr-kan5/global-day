@@ -35,7 +35,7 @@
 
   <div class="user-btn">
    <%= image_tag "garbage.png", class:"user-icon" %> 
-    <%= link_to 'DELETE', "#", method: :destroy, class:'delete' %>
+    <%= link_to 'DELETE', post_path(@post.id), method: :delete, class:'delete' %>
   </div>
   <% end %>
 </div>
