@@ -24,10 +24,8 @@ class PostsController < ApplicationController
   def edit
     if user_signed_in? && current_user == @post.user
       render :edit
-    elsif user_signed_in? 
+    else 
       redirect_to posts_path
-    else
-      redirect_to root_path
     end
   end
 
