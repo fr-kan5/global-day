@@ -1,0 +1,28 @@
+.comment-index {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.comments{
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.comments-all {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.comment-context {
+  border-radius: 0.67em;
+  border: 1px solid #f0f0f0f9;
+  padding: 15px;
+
+}
+
