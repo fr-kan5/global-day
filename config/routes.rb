@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root to: 'homes#index'
   resources :homes, only: :index
   resources :posts do
-    resources :comments, only: [:index,:create]
+    resources :comments, only: :create
   end
 end
