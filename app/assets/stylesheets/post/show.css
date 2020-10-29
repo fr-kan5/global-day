@@ -1,19 +1,26 @@
-.show-page {
+.show_page {
+  width: 100%;
+  padding: 15px;
   display: flex;
-
+  justify-content: space-between;
 }
 
 .show_post {
-  padding: 2% 10%;
-  margin: 10px;
-  text-align: center;
   display: flex;
   flex-direction: column;
+  padding: auto; 
+  margin: auto;
+  text-align: center;
 
-}
+} 
 
 .title_show {
 text-align: center;
+}
+.one-post{
+  text-align: center;
+  width: 50%;
+  overflow: scroll;
 }
 
 .image_wrapper{
@@ -21,7 +28,7 @@ text-align: center;
   justify-content: center;
 }
 .image_show{
-  width: 65vh;
+  width: 55vh;
   text-align: center;
 }
 
@@ -59,7 +66,7 @@ text-align: center;
 }
 
 .user-icon{
-  width: 3vw;
+  width: 4vw;
 }
 
 .delete {
