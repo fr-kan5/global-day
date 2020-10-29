@@ -1,4 +1,7 @@
 <footer class="comment-footer">
+
+  
+
   <div class="comment-input">
   <%= form_with model: @comment, url: post_comments_path(@post.id), class: 'form-talk', local: true do |f| %>
     <%= f.text_field :text, class: 'form-message', placeholder: 'type a message' %>
@@ -6,4 +9,4 @@
   </div>
   <% end %>
 
-</footer>
+ </footer> 

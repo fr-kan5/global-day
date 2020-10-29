@@ -1,54 +1,81 @@
 <%= render 'shared/second_header' %>
-
+      <h2 class="title_show">
+      <%= @post.title%>
+    </h2>
 <div class="show_page">
-  <div class="show_post">
-  <h2 class="title_show">
-    <%= @post.title%>
-  </h2>
-  <div class="image-wapper">
-  <%= image_tag @post.image, class:"image_show" %>
-  </div>
-  <span class="like-btn">
-    <%= image_tag "like.png", class:"like-icon" %> 
-  </span>
+  <%# <div class="show_post"> %>
 
-  <div class="show-text">
-  <%= @post.text%>
+    <div class="one-post">
+    <div class="image-wapper">
+      <%= image_tag @post.image, class:"image_show" %>
+    </div>
+    <span class="like-btn">
+      <%= image_tag "like.png", class:"like-icon" %> 
+    </span>
+
+    <div class="show-text">
+      <%= @post.text%>
+    </div>
+
+    <div class="post-user-name">
+      <%= @post.user.name %>
+    </div>
+
+    <% if user_signed_in? && current_user == @post.user%>
+      <div class="show-btn">
+        <div class="user-btn">
+          <%= image_tag "edit.png", class:"user-icon"%>
+          <%= link_to 'EDIT', edit_post_path(@post.id) , class:"edit" %>
+        </div>
+
+        <div class="user-btn">
+          <%= image_tag "garbage.png", class:"user-icon" %> 
+          <%= link_to 'DELETE', post_path(@post.id), method: :delete, class:'delete' %>
+        </div>
+      </div>
+  <% end %>
+    </div>
+    <%# </div> %>
+
+
+  <%# <div class="chat-btn"> %>
+    <div class="talk-room">
+
+      <% if current_user %>
+
+        <div class="comments">
+          <div class="comments-all">
+            <% if @comments == nil %>
+              <% @comments.each do |comment| %>
+                <p class="comment-context">
+                <strong><%= link_to comment.user.name, "/users/#{comment.user_id}" %>：</strong>
+                <%= comment.text %>
+                </p>
+                <% end %>
+            <% else %>
+              <div class="comment-do">
+                NO COMMENT YET
+              </div>
+            <% end %>
+          </div>
+        </div>
+        <%= render 'shared/footer' %>
+      </div>
+      <% else %>
+      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+      <% end %>
+    </div>
+  </div>
+</div>
   </div>
 
-  <div class="post-user-name">
-  <%= @post.user.name %>
-  </div>
-  </div>
+</div>
+</div>
 
-  <div class="show-btn">
-  <% unless user_signed_in? && current_user == @post.user%>
-  <div class="chat-btn">
-  
-  <% if current_user %>
-  <div class="comment-back">
+
+  <%# <div class="comment-back">
 
       <%= form_with(model: [@post, @comment],local: true, class: "comment-form") do |f| %>
-        <%= f.text_area :text, placeholder: "  --HELP HIS/HER CONTEXT--", class: "comment-text" %>
-        <%= f.submit 'COMMENT ROOM',class:"chatroom" %>
-      <% end %>
-    <% else %>
-      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
-    <% end %>
-</div>
-  </div>
-
-  <% else %>
-
-  <div class="user-btn">
-    <%= image_tag "edit.png", class:"user-icon"%>
-    <%= link_to 'EDIT', edit_post_path(@post.id) , class:"edit" %>
-  </div>
-
-  <div class="user-btn">
-   <%= image_tag "garbage.png", class:"user-icon" %> 
-    <%= link_to 'DELETE', post_path(@post.id), method: :delete, class:'delete' %>
-  </div>
-  <% end %>
-</div>
-
+        <%# <%= f.text_area :text, placeholder: "  --HELP HIS/HER CONTEXT--", class: "comment-text" %>
+        <%# <%= f.submit 'COMMENT ROOM',class:"chatroom" %>
+      <%# <% end %>    
