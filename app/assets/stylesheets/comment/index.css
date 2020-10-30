@@ -5,29 +5,36 @@
 
 .talk-room {
   width: 40%;
-}
-
-.comments{
-  height: 420px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 78vh;
 }
 
 
 .comments-all {
   width: 100%;
+  height: 80%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   overflow: scroll;
 }
+
+
+#comments{
+  list-style: none;
+  height: 420px;
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
 
 .comment-context {
   border-radius: 0.67em;
   border: 1px solid #f0f0f0f9;
   padding: 15px;
+  margin-bottom: 3px;
 
 }
 
