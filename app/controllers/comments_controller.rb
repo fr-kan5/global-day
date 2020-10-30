@@ -1,14 +1,17 @@
 class CommentsController < ApplicationController
   before_action :authenticate_user!
 
-  def create
-    @post = Post.find(params[:post_id])
-    @comment = Comment.new(comment_params)
+  # def new
+  #   @post = Post.find(params[:post_id])
+  #   @comments = @post.comments.includes(:user).order("created_at DESC")
+  #   @comment = Comment.new
 
+
+  def create
+
+    @comment = Comment.new(comment_params)
     if @comment.save
-      redirect_to post_path(@post.id)
-    else
-      render 'posts/show'
+      ActionCable.server.broadcast 'comment_channel', content: @comment, user: @comment.user
     end
   end
 
