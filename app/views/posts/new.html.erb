@@ -1,7 +1,7 @@
 <%= render 'shared/second_header' %>
 
 <div class="new-post">
-<%= form_with model: @post, local: true do |f| %>
+<%= form_with model: @post, class: "form-area", local: true do |f| %>
 
 <%= render 'shared/error_messages', model: f.object %> 
 <div class="img-upload">

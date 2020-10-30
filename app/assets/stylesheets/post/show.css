@@ -1,19 +1,26 @@
-.show-page {
+.show_page {
+  width: 100%;
+  padding: 15px;
   display: flex;
-
+  justify-content: space-between;
 }
 
 .show_post {
-  padding: 10% 30%;
-  margin: auto;
-  text-align: center;
   display: flex;
   flex-direction: column;
+  padding: auto; 
+  margin: auto;
+  text-align: center;
 
-}
+} 
 
 .title_show {
 text-align: center;
+}
+.one-post{
+  text-align: center;
+  width: 50%;
+  overflow: scroll;
 }
 
 .image_wrapper{
@@ -21,7 +28,7 @@ text-align: center;
   justify-content: center;
 }
 .image_show{
-  width: 65vh;
+  width: 55vh;
   text-align: center;
 }
 
@@ -39,10 +46,12 @@ text-align: center;
 }
 
 .chat-btn {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   border-radius: 30px;
   background-color: aqua;
-  width: 25%;
+  width: 55%;
   padding: 1%;
   margin: 1%;
 }
@@ -57,7 +66,7 @@ text-align: center;
 }
 
 .user-icon{
-  width: 3vw;
+  width: 4vw;
 }
 
 .delete {
@@ -79,4 +88,22 @@ text-align: center;
   color: #ffffff;
   font-size: 30px;
   font-family: 'Quicksand', sans-serif;
+}
+
+.comment-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.comment-form {
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+
+.comment-text {
+  width: 40vw;
+  height: 30vh;
 }
