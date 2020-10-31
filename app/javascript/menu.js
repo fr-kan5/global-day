@@ -18,6 +18,4 @@ function menu() {
     });
   });
 }
-
-
 window.addEventListener("load", menu)
