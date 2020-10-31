@@ -22,7 +22,7 @@
   <nav>
     <ul id="lists">
       <li>
-        <%= link_to 'MY PAGE', "#", id:'list' %>
+        <%= link_to 'MY PAGE', user_path(current_user.id), id:'list' %>
       </li>
       <li>
         <%= link_to 'NEW DAIRY', new_post_path, id:'list' %>
