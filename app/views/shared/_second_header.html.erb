@@ -5,11 +5,35 @@
     <%= link_to image_tag("header-logo.jpg", class:"site-icon"), "/" %> 
 
 
-  <ul class="header-link">
-    <li><%= link_to '新規投稿', new_post_path, class:'post-new' %></li>
-    <li><%= link_to'チャットする', "#", class: 'chat-new'%>
-    <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
-  </ul>
-
+<%# 
+    <li></li>
+    <%# <li><%= link_to'チャットする', "#", class: 'chat-new'%>
+    <%# <li></li>
+  <%# </ul> %> 
+    <div class="button-trigger", id="button-trigger">
+<div class="avatar-nav", id="avatar-nav">
+<div class="avatar">
+  <% if current_user.avatar.attached? %>
+  <%= image_tag(current_user.avatar, class:"avatar-image") %>  
+  <% end %>  
   </div>
+</div>
+
+  <nav>
+    <ul id="lists">
+      <li>
+        <%= link_to 'MY PAGE', "#", id:'list' %>
+      </li>
+      <li>
+        <%= link_to 'NEW DAIRY', new_post_path, id:'list' %>
+      </li>
+      <li>
+        <a href="#">Works</a>
+      </li>
+      <li>
+        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, id:'list' %>
+      </li>
+    </ul>
+  </nav>
+      </div>
 </header>
