@@ -13,6 +13,11 @@
     <%= f.text_field :name, autofocus: true, autocomplete: "name", class:"textarea", id:"user-name" %>
   </div>
   </div>
+ 
+    <div class="form-group">
+    <%= f.label "プロフィール画像", class:"form-text" %>
+    <%= f.file_field :avatar %> 
+    </div>
 
   <div class="form-group">
     <%= f.label "メールアドレス", class:"form-text" %>
