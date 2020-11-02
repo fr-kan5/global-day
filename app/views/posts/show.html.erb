@@ -42,7 +42,7 @@
           <% if @comments.present? %>
             <% @comments.reverse_each do |comment| %>
               <div class='comment-context'>
-                <li><%= link_to comment.user.name, "#" %> ： <%= comment.text %></li>
+                <li><%= link_to comment.user.name, user_path(comment.user.id) %> ： <%= comment.text %></li>
               </div>
             <% end %>
           <% else %>

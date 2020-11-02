@@ -29,6 +29,12 @@
   </div>
 
   </div>
+
+  <% if user_signed_in? && current_user == @user %>
+  <div class="user-btn">
+  <%= link_to 'EDIT', edit_user_registration_path(@user.id) %>
+  </div>
+  <% end %>
 </div>
 
 
