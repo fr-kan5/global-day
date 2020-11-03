@@ -8,7 +8,9 @@
         <%= image_tag @post.image, class:"image_show" %>
       </div>
       <span class="like-btn">
-        <%= image_tag "like.png", class:"like-icon" %> 
+        <div id="like-btn-<%= @post.id %>">
+          <%= render 'likes/like', post: @post %>
+        </div>
       </span>
 
       <div class="show-text">
