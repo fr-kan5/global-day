@@ -44,7 +44,6 @@
   <p><%= @user.name %>さんの投稿一覧</p>
   </div>
   <div class="user-p-wapper">
-  <%# <div class="user-posts"> %>
   <% @posts.each do |post| %>
     <div class="user-post">
     <%= link_to post_path(post.id), class:"user-post" do%>
@@ -54,11 +53,10 @@
             <%= render 'likes/like', post: post %>
           </div>
         </div>
-      <p class="detail"><%= post.title %></p>
-      <span class="detail"><%= truncate(post.text, :length => 80)%> 
-      <%= link_to "...more", post_path(post.id) %></span>
+        <p class="detail"><%= post.title %></p>
+        <span class="detail"><%= truncate(post.text, :length => 80)%> 
+        <%= link_to "...more", post_path(post.id) %></span>
     <% end %>
     </div>
   <% end %>
-  <%# </div> %>
 </div>
