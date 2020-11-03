@@ -12,7 +12,9 @@
       <div class="post_body">
         <div class="card__body">
           <span class="like-btn">
-            <%= image_tag "like.png", class:"like-icon" %> 
+        <div id="like-btn-<%= post.id %>">
+          <%= render 'likes/like', post: post %>
+        </div>
           </span>
           <h3 class="card__title"><%= post.title%></h3>
         </div>
