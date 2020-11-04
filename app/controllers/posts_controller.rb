@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_post, only:[:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
   def index
-    @posts = Post.includes(:user).order("created_at DESC")
+    @posts = Post.includes(:user).order('created_at DESC')
     @like = Like.new
   end
 
@@ -39,7 +39,7 @@ class PostsController < ApplicationController
   def edit
     if user_signed_in? && current_user == @post.user
       render :edit
-    else 
+    else
       redirect_to posts_path
     end
   end
@@ -53,6 +53,7 @@ class PostsController < ApplicationController
   end
 
   private
+
   def post_params
     params.require(:post).permit(:title, :text, :place, :image).merge(user_id: current_user.id)
   end

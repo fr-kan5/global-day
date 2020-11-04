@@ -1,12 +1,11 @@
 class LikesController < ApplicationController
-
   before_action :authenticate_user!
   before_action :set_like
 
   def create
     user = current_user
     post = Post.find(params[:post_id])
-    like = Like.create(user_id: user.id, post_id: post.id)
+    @like = Like.create(user_id: user.id, post_id: post.id)
   end
 
   def destroy
@@ -21,5 +20,4 @@ class LikesController < ApplicationController
   def set_like
     @post = Post.find(params[:post_id])
   end
-
 end

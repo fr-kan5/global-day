@@ -38,11 +38,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
-
-  
- 
   protected
-  
+
   def update_resource(resource, params)
     resource.update_without_current_password(params)
   end
@@ -57,9 +54,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
     devise_parameter_sanitizer.permit(:account_update, keys: [:attribute])
   end
 
-
   # The path used after sign up.
-  def after_update_path_for(resource)
+  def after_update_path_for(_resource)
     user_path(@user.id)
   end
 
