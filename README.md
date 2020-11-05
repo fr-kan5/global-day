@@ -15,7 +15,8 @@
 - has_many :comments
 - has_many :posts
 - has_many :likes
-- has_many :favorites, through: :like, sources: :post
+- has_many :likes_posts, through: :likes, source: :post
+- belongs_to :user
 
 
 
@@ -31,9 +32,7 @@
 - belongs_to :user
 - has_many :likes
 - has_many :users, through: :likes
-- has_many :rooms
-- has_many :post_tag_relations
-- has_many :tags, through: :post_tag_relations
+- has_many :comments
 
 
 
@@ -49,16 +48,6 @@
 
 
 
-## Roomテーブル
-| Column        | Type       | Options                        |
-| ------------- | ---------- | ------------------------------ |
-| name          | string     |                                |
-| post_id       | references | null: false, foreign_key: true |
-
-### Association
-- has_many :comments
-- belongs_to :post
-
 
 
 ## Commentsテーブル
@@ -66,31 +55,19 @@
 | ------- | ---------- | ------------------------------ |
 | text    | text       | null: false                    |
 | user_id | references | null: false, foreign_key: true |
-| room_id | references | null: false, foreign_key: true |
+| post_id | references | null: false, foreign_key: true |
 
 ### Associate
 - belongs_to :user
-- belongs_to :room
-
-
-
-## Tagsテーブル
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| name    | string     | null:false, uniqueness: true   |
-
-### Associate
-- has_many :post_tag_relations
-- has_many :post, through: :post_tag_relations
-
-
-
-## Post_tag_relationsテーブル
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| post_id | references | foreign_key: true              |
-| tag_id  | references | foreign_key: true              |
-
-### Associate
 - belongs_to :post
-- belongs_to :tag
+
+
+## Memosテーブル
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| title   | string     | null: false                    |
+| text    | text       | null: false                    |
+| user_id | references | null: false, foreign_key: true |
+
+### Associate
+- belongs_to :user
