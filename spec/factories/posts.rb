@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :post do
-    title {Faker::Lorem.sentence}
-    place {Faker::Address.city}
-    text {Faker::Lorem.sentence}
+    title { Faker::Lorem.sentence }
+    place { Faker::Address.city }
+    text { Faker::Lorem.sentence }
     association :user
 
     after(:build) do |post|

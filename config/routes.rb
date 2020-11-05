@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   resources :users, only: :show
   resources :posts do
     resources :comments, only: :create
+    post 'add' => 'likes#create'
+    delete '/add' => 'likes#destroy'
   end
 end
