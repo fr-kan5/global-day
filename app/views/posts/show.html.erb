@@ -1,0 +1,69 @@
+<%= render 'shared/second_header' %>
+  <h2 class="title_show">
+    <%= @post.title%>
+  </h2>
+  <div class="show_page">
+    <div class="one-post">
+      <div class="image-wapper">
+        <%= image_tag @post.image, class:"image_show" %>
+      </div>
+      <span class="like-btn">
+        <div id="like-btn-<%= @post.id %>">
+          <%= render 'likes/like', post: @post %>
+        </div>
+      </span>
+
+      <div class="show-text">
+        <%= @post.text%>
+      </div>
+
+      <div class="post-user-name">
+        <%= @post.user.name %>
+      </div>
+
+      <% if user_signed_in? && current_user == @post.user%>
+        <div class="show-btn">
+          <div class="user-btn">
+            <%= image_tag "edit.png", class:"user-icon"%>
+            <%= link_to 'EDIT', edit_post_path(@post.id) , class:"edit" %>
+          </div>
+
+          <div class="user-btn">
+            <%= image_tag "garbage.png", class:"user-icon" %> 
+            <%= link_to 'DELETE', post_path(@post.id), method: :delete, class:'delete' %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+<%# コメント表示部分 %>
+    <div class="talk-room">
+
+      <div class="comments-all">
+        <ul id="comments">
+          <% if @comments.present? %>
+            <% @comments.reverse_each do |comment| %>
+              <div class='comment-context'>
+                <li><%= link_to comment.user.name, user_path(comment.user.id) %> ： <%= comment.text %></li>
+              </div>
+            <% end %>
+          <% else %>
+            <div class="comment-do">
+              NO COMMENT YET
+            </div>
+          <% end %>
+        </ul>
+      </div>
+
+<%# //コメント表示部分 %>
+
+<%# コメント投稿部分 %>
+      <div class="comment-input">
+        <%= form_with(model: [@post,@comment], url: post_comments_path(@post.id), class: 'form-talk', id: "form-talk", local: true) do |f| %>
+          <%= f.text_field :text, class: 'form-message', placeholder: 'type a message' %>
+          <input type="submit" name="commit" value="SEND" class="form-submit">
+        <% end %>
+      </div>
+    </div>
+<%# //コメント投稿部分 %>
+  </div>

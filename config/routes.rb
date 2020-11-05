@@ -1,3 +1,14 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_for :users , controllers: {
+    registrations: 'users/registrations',
+    sessions: 'users/sessions'
+  }
+  root to: 'homes#index'
+  resources :homes, only: :index
+  resources :users, only: :show
+  resources :posts do
+    resources :comments, only: :create
+    post 'add' => 'likes#create'
+    delete '/add' => 'likes#destroy'
+  end
 end

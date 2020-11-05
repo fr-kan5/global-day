@@ -1,0 +1,40 @@
+<%= render 'shared/second_header' %>
+<h1>一覧画面</h2>
+
+<div class="card__wrapper">
+  <% @posts.each do |post| %>
+    
+      <div class="card">
+      <%= link_to post_path(post.id) do %>
+        <%= image_tag post.image, class:"post-img" if post.image.attached?%>
+      <%end%>
+
+      <div class="post_body">
+        <div class="card__body">
+          <span class="like-btn">
+        <div id="like-btn-<%= post.id %>">
+          <%= render 'likes/like', post: post %>
+        </div>
+
+          </span>
+          <h3 class="card__title"><%= post.title%></h3>
+        </div>
+
+        <div class="card__body">
+          <%= image_tag "world.png", class:"world-icon" %>
+          <span class="card__place">
+          <%= post.place %></span>
+        </div>
+
+        <div class="post-text">
+          <p class="post-text"><%= truncate(post.text, :length => 80) do %> 
+          <%= link_to "...more", post_path(post.id) %>
+          </p><%end%>
+        </div> 
+      </div>
+
+    </div>
+
+  <% end %>
+</div>
+

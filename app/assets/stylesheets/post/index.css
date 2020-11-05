@@ -1,0 +1,50 @@
+.post-img {
+  width: 28vw;
+  height: 35vh;
+}
+
+.card__wrapper {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  width: calc((100% - 50px) / 2);
+  height: 50vh;
+  padding: 30px;
+  margin-bottom: 80px;
+  border: 1px solid#000000;
+}
+
+.card__body {
+  flex-direction: column;
+  padding-left: 5px;
+  word-wrap: normal;
+}
+
+.card__title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+p.post-text {
+  word-wrap: normal;
+  padding: 5px;
+}
+
+
+
+.world-icon {
+  height: 4vh;
+  width: 4vh;
+  margin-right: 0.5vw;
+}
+
+.card__place {
+  padding-bottom: 7px;
+  font-weight: bold;
+}

@@ -1,0 +1,31 @@
+<%= render 'shared/second_header' %>
+
+<div class="new-post">
+<%= form_with model: @post, class: "form-area", local: true do |f| %>
+
+<%= render 'shared/error_messages', model: f.object %> 
+<div class="img-upload">
+  <div class="weight-bold-text">
+    画像を選択する
+  </div>
+  <%= f.file_field :image, id:"post-image" %>
+</div>
+
+<div class="new-title">
+  <%= f.text_area :title, placeholder:"TITLE", class:"posts-text", id:"post-title", maxlength:"40" %>
+</div>
+
+<div class="new-place">
+  <%= f.text_area :place, placeholder: "PLACE",class:"posts-text", id:"post-place", maxlength:"40" %>
+</div>
+
+<div class="new-text">
+
+<%= f.text_area :text, placeholder: "TEXT",class:"posts-text", id:"post-text" ,rows:"7" ,maxlength:"400" %>
+</div>
+
+<div class="post-btn-contents">
+<%= f.submit "NEW POST", class:"post-btn" %>
+
+<% end %>
+</div>

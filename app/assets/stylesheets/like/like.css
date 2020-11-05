@@ -1,0 +1,13 @@
+.like-button {
+  text-decoration: none;
+}
+
+.like-icon {
+  height: 6vh;
+  width: 6vh;
+  margin-right: 0.5vw;
+}
+
+.like-name {
+  font-weight: bold;
+}

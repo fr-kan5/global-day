@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  
+.site-icon {
+  height: 100px;
+
+}

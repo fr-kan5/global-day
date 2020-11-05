@@ -1,0 +1,62 @@
+
+<%= render 'shared/second_header' %>
+
+
+<div class="contents row">
+
+
+
+<div class="user-profile">
+<%# ユーザー画像 %>
+  <div class="user-avatar">
+  <% if current_user.avatar.attached? %>
+  <%= image_tag(@user.avatar, class:"avatar-image") %>  
+  <% end %>  
+  </div>
+  
+  <div class="user-info">
+  <%# 名前 %>
+  <div class="user-name">
+  <%= @user.name %>
+  </div>
+  <%# 国 %>
+  <div class="user-country">
+  <%= @user.country.name %>
+  </div>
+  <%# プロフィール %>
+  <div class= "user-profile">
+  <%= @user.profile %>
+  </div>
+
+  </div>
+
+  <% if user_signed_in? && current_user == @user %>
+  <div class="user-btn">
+  <%= link_to 'EDIT', edit_user_registration_path(@user.id) %>
+  </div>
+  <% end %>
+</div>
+
+
+
+<%# 投稿一覧 %>
+  <div class="user-p-info">
+  <p><%= @user.name %>さんの投稿一覧</p>
+  </div>
+  <div class="user-p-wapper">
+  <% @posts.each do |post| %>
+    <div class="user-post">
+    <%= link_to post_path(post.id), class:"user-post" do%>
+      <%= image_tag post.image, class:"post-imges" %>
+        <div class="like-btn">
+          <div id="like-btn-<%= post.id %>">
+            <%= render 'likes/like', post: post %>
+          </div>
+        </div>
+        <p class="detail"><%= post.title %></p>
+        <span class="detail"><%= truncate(post.text, :length => 80)%> 
+        <%= link_to "...more", post_path(post.id) %></span>
+    <% end %>
+    </div>
+  <% end %>
+</div>

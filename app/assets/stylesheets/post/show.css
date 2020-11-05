@@ -1,0 +1,109 @@
+.show_page {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show_post {
+  display: flex;
+  flex-direction: column;
+  padding: auto; 
+  margin: auto;
+  text-align: center;
+
+} 
+
+.title_show {
+text-align: center;
+}
+.one-post{
+  text-align: center;
+  width: 50%;
+  overflow: scroll;
+}
+
+.image_wrapper{
+  display: flex;
+  justify-content: center;
+}
+.image_show{
+  width: 55vh;
+  text-align: center;
+}
+
+.show-text {
+  word-wrap: normal;
+}
+
+.post-user-name {
+  font-weight: bold;
+}
+.show-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-btn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 30px;
+  background-color: aqua;
+  width: 55%;
+  padding: 1%;
+  margin: 1%;
+}
+
+.user-btn {
+  text-align: center;
+  background-color: aqua;
+  border-radius: 30px;
+  width: 20%;
+  padding: 1%;
+  margin: 1%;
+}
+
+.user-icon{
+  width: 4vw;
+}
+
+.delete {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.edit {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.chatroom {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.comment-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.comment-form {
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+
+.comment-text {
+  width: 40vw;
+  height: 30vh;
+}
