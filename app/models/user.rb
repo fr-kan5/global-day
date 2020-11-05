@@ -7,6 +7,7 @@ class User < ApplicationRecord
   has_many :likes, dependent: :destroy
   has_many :like_posts, through: :likes, source: :post
   has_many :comments, dependent: :destroy
+  has_many :memos
   has_one_attached :avatar
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :country
