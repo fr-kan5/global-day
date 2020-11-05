@@ -15,6 +15,9 @@
         <div id="like-btn-<%= post.id %>">
           <%= render 'likes/like', post: post %>
         </div>
+       LIKE! : <%post.likes.each do |like| %> 
+       <%= like.user.name %>
+       <% end %>
           </span>
           <h3 class="card__title"><%= post.title%></h3>
         </div>
