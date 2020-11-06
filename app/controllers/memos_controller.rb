@@ -8,8 +8,9 @@ class MemosController < ApplicationController
 
   def create
     @memo = Memo.new(params_memo)
-    @memo.save
-    redirect_to user_memos_path(current_user)
+    if @memo.save
+      ActionCable.server.broadcast 'memo_channel', content: @memo
+    end
 
   end
 
