@@ -11,4 +11,5 @@ Rails.application.routes.draw do
     post 'add' => 'likes#create'
     delete '/add' => 'likes#destroy'
   end
+  resources :memos, only:[:index, :create]
 end
