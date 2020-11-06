@@ -1,0 +1,43 @@
+<%= render 'shared/second_header' %>
+
+<div class="memo-top">
+</div>
+<div class="memo-all">
+<%# タイトル表示 %>
+<div class="title-brock">
+
+
+<% @memos.each do |memo| %>
+  <div class="title-frame">
+  <input id="memo-check-<%=memo.id%>" class="memo-check" type="checkbox">
+    <label class="memo-label", for="memo-check-<%=memo.id%>"><%= memo.title%></label>
+    <div class="memo-content">
+    <p><%= memo.content%></p>
+    </div>
+  </div>
+<% end %>
+</div>
+
+
+<div class="memo-right">
+<%# メモ作成アイコン %>
+<div class="memo-create-block">
+<div class="memo-create">
+<%=link_to "#" do%>
+<%= image_tag "memo.png", class:"memo-icon" %>
+<%= image_tag "pencil.png", class:"memo-icon" %>
+<% end %>
+</div>
+</div>
+
+<%# メモ作成フォーム %>
+<div class="memo-form-block">
+<%= form_with model: @memo, url: user_memos_path(current_user.id), class: "memo-area", local: true do |f| %>
+  <%= f.text_area :title, placeholder:"TITLE", class:"posts-text", id:"post-title"%>
+  <%= f.text_area :content, placeholder:"MEMO", class:"posts-text", id:"post-title", rows: 6 %>
+  <%= f.submit "NEW POST", class:"post-btn", id:"submit" %>
+<% end %>
+</div>
+
+</div>
+</div>
