@@ -2,7 +2,7 @@ class MemosController < ApplicationController
   before_action :authenticate_user!
 
   def index 
-    @memos = Memo.includes(:user)
+    @memos = Memo.all.where(user_id: current_user)
     @memo = Memo.new
   end
 
