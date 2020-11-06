@@ -5,11 +5,7 @@
     <%= link_to image_tag("header-logo.jpg", class:"site-icon"), "/" %> 
 
 
-<%# 
-    <li></li>
-    <%# <li><%= link_to'チャットする', "#", class: 'chat-new'%>
-    <%# <li></li>
-  <%# </ul> %> 
+
     <div class="button-trigger", id="button-trigger">
 <div class="avatar-nav", id="avatar-nav">
 <div class="avatar">
@@ -28,7 +24,7 @@
         <%= link_to 'NEW DAIRY', new_post_path, id:'list' %>
       </li>
       <li>
-        <a href="#">Works</a>
+        <%= link_to 'MY MEMOS', user_memos_path(current_user.id), id:'list' %>
       </li>
       <li>
         <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, id:'list' %>
