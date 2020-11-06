@@ -1,0 +1,68 @@
+.memo-all {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+}
+
+.memo-top {
+  height: 10vh;
+}
+
+
+.title-frame {
+  width: 50vw;
+  border: 1px solid #000000;
+  padding: 5px auto;
+  margin: 10px 10px 0 25px;
+}
+/* aaaa */
+.memo-check{
+  display: none;
+}
+.memo-label {
+  background: #333;
+  color: #fff;
+  display: block;
+  margin-bottom: 1px;
+  padding: 10px;
+}
+.memo-content{
+  border: 1px solid #333;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  transition: .5s;
+  visibility: hidden;
+}
+.memo-check:checked + .memo-label + .memo-content {
+  height: 100%;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+}
+
+.memo-right{
+  width: 40%;
+}
+.memo-create {
+  margin: 20px auto;
+}
+
+.memo-icon {
+
+  width: 48px;
+}
+
+
+.memo-area {
+
+  width: 80%;
+}
+
+.memo-form-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
