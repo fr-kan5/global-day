@@ -4,14 +4,15 @@
 </div>
 <div class="memo-all">
 <%# タイトル表示 %>
-<div class="title-block", id="title-brock">
+
+<div class="title-block" id="title-block">
 <% @memos.reverse_each do |memo| %>
   <div class="title-frame">
-  <input id="memo-check-<%=memo.id%>" class="memo-check" type="checkbox">
+    <input id="memo-check-<%=memo.id%>" class="memo-check" type="checkbox">
     <label class="memo-label", for="memo-check-<%=memo.id%>"><%= memo.title%></label>
-    <div class="memo-content">
+  </div>
+  <div class="memo-content">
     <p><%= memo.content%></p>
-    </div>
   </div>
 <% end %>
 </div>
@@ -29,11 +30,11 @@
 </div>
 
 <%# メモ作成フォーム %>
-<div class="memo-form-block">
+<div class="memo-form-block", id="memo-form-block">
 <%= form_with(model: @memo, url: user_memos_path(current_user.id), local: true, id: "memo_area") do |f| %>
   <%= f.text_area :title, placeholder:"TITLE", class:"memo-text", id:"memo_title"%>
   <%= f.text_area :content, placeholder:"MEMO", class:"memo-text", id:"memo_content", rows: 6 %>
-  <input type="submit" name="commit" value="NEW POST", class="memo-btn", id="memo-btn" >
+  <input type="submit" name="commit" value="NEW POST" class="memo-btn" id="memo-btn" >
 <% end %>
 </div>
 
