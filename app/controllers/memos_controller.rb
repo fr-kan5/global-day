@@ -11,7 +11,6 @@ class MemosController < ApplicationController
     if @memo.save
       ActionCable.server.broadcast 'memo_channel', content: @memo
     end
-
   end
 
   private
