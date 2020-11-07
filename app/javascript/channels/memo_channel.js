@@ -19,9 +19,13 @@ consumer.subscriptions.create("MemoChannel", {
     </div>
     </div>
     `;
-    const messages = document.getElementById('title-brock');
-    const newMessage = document.getElementById('memo_area');
-    messages.insertAdjacentHTML('afterbegin', html);
-    newMessage.value='';
+    const memos = document.getElementById('title-block');
+    const newMemos = document.getElementById('memo_title');
+    const newMemo = document.getElementById('memo_content');
+    memos.insertAdjacentHTML('afterbegin', html);
+    newMemos.value='';
+    newMemo.value='';
+
+
   }
 });
