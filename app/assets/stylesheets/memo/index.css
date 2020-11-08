@@ -2,26 +2,25 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
+  height: 400px;
 }
 
 .memo-top {
   height: 10vh;
 }
 
-.title-block{
+.title-left{
   width: 70%;
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   overflow: scroll;
 }
 .title-frame {
   width: 50vw;
+
   border: 1px solid #000000;
-  padding: 5px auto;
+  padding: 5px;
   margin: 10px 10px 0 25px;
+  display: flex;
+  flex-direction: column; 
 }
 /* aaaa */
 .memo-check{
@@ -33,6 +32,8 @@
   display: block;
   margin-bottom: 1px;
   padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 .memo-content{
   border: 1px solid #333;
@@ -41,9 +42,10 @@
   padding: 0 10px;
   transition: .5s;
   visibility: hidden;
+  
 }
 .memo-check:checked + .memo-label + .memo-content {
-  height: 100%;
+  height: auto;
   opacity: 1;
   padding: 10px;
   visibility: visible;
