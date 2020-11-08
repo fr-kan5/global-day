@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   }
   root to: 'homes#index'
   resources :homes, only: :index
-  resources :users, only: :show
+  resources :users, only: :show do
+    resources :memos, only:[:index, :create]
+  end
   resources :posts do
     resources :comments, only: :create
     post 'add' => 'likes#create'
