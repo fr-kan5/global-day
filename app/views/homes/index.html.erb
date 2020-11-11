@@ -1,66 +1,64 @@
 
 
   <div class="home-img" >
-  <div class="top-line">
-  <div class="line-detail">
-  <div class="top-icon">
-  <%= link_to image_tag("header-logo.jpg", class:"site-icon"), "/" %>
+    <div class="top-line">
+      <div class="line-detail">
+        <div class="top-icon">
+          <%= link_to image_tag("header-logo.jpg", class:"site-icon"), "/" %>
+        </div>
+      <div class="top-menu">
+        <%= link_to 'ABOUT', "#", class:"about"%> 
+        <%= link_to 'CONTACT', "#", class:"contact"%> 
+        <%= link_to 'LANGUAGE', "#", class:"language"%>
+      </div>
+    </div>
   </div>
-  <div class="top-menu">
-  <%= link_to 'ABOUT', "#", class:"about"%> 
-  <%= link_to 'CONTACT', "#", class:"contact"%> 
-  <%= link_to 'LANGUAGE', "#", class:"language"%>
-  </div>
-  </div>
-</div>
-<div class="main-view">
-  <div class="phrase-box">
-    <div class="phrase">
-  TO POST
-  </div>
-  <div class="phrase">
-  TO NETWORK
-  </div>
-  </div>
+  <div class="main-view">
+    <div class="phrase-box">
+      <div class="phrase">
+        TO POST
+      </div>
+      <div class="phrase">
+        TO NETWORK
+      </div>
+    </div>
     
     <div class="get-user">
-    <div class="user-top">
+      <div class="user-top">
 
 
-<%= link_to 'SIGN IN', new_user_session_path, class: "login" %>
-<%= form_with model: @user, url: user_session_path, class: 'registration-main', local: true do |f| %>
-  <div class="field">
-      <div class="name-form">
-  <div class="form-group">
-    <%= f.label "メールアドレス" %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-  </div>
+        <%= link_to 'SIGN IN', new_user_session_path, class: "login" %>
+        <%= form_with model: @user, url: user_session_path, class: 'registration-main', local: true do |f| %>
+        <div class="login-field">
+          <div class="name-form">
+            <div class="form-group">
+              <%= f.label "メールアドレス" %><br />
+              <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+            </div>
+          </div>
 
-  <div class="form-group">
-    <%= f.label "パスワード" %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+          <div class="form-group">
+            <%= f.label "パスワード" %><br />
+            <%= f.password_field :password, autocomplete: "current-password" %>
+          </div>
 
-  <div class="form-group">
+          <div class="form-group">
 
 
-  <div class="actions">
-    <%= f.submit "Log in", class:"submit-btn" %>
-  </div>
-  </div>
-<% end %>
-  </div>
-  
-    <div class="not-user">
-    <div class="join-us">
-    <p class="sign-up-info">
-Don't have an account?
-</p>
-<%= link_to 'SIGN UP', new_user_registration_path, class: "sign-up" %>
-</div>
-</div>
-</div>
-    </div>
+            <div class="actions">
+              <%= f.submit "Log in", class:"submit-btn" %>
+            </div>
+          </div>
+          <% end %>
+        </div>
+
+          <div class="join-us">
+            <p class="sign-up-info">
+              Don't have an account?
+            </p>
+            <%= link_to 'SIGN UP', new_user_registration_path, class: "sign-up" %>
+          </div>
+      
     </div>
   </div>
+
