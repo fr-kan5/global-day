@@ -1,8 +1,11 @@
-<header>
-
-  <div class='main-bar-contents'> 
-  <p class="title">
-    <%= link_to image_tag("header-logo.jpg", class:"site-icon"), "/" %> 
-  </div>
-
-</header>
+<div class="top-line">
+      <div class="line-detail">
+        <div class="top-icon">
+          <%= link_to image_tag("header-logo.jpg", class:"site-icon"), "/" %>
+        </div>
+      <div class="top-menu">
+        <%= link_to 'ABOUT', "#", class:"about"%> 
+        <%= link_to 'CONTACT', "#", class:"contact"%> 
+        <%= link_to 'LANGUAGE', "#", class:"language"%>
+      </div>
+    </div>
