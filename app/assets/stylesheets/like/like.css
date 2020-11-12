@@ -1,5 +1,6 @@
 .like-button {
   text-decoration: none;
+
 }
 
 .like-icon {
@@ -10,4 +11,9 @@
 
 .like-name {
   font-weight: bold;
+}
+
+.like-btn-id {
+  display: flex;
+  align-items: center;
 }
