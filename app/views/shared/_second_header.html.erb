@@ -1,10 +1,16 @@
 <header class="header-second">
 
-   <div class='main-bar-contents'> 
-    <p class="title">
-    <%= link_to image_tag("header-logo.jpg", class:"site-icon"), "/" %> 
-
-
+<div class="second-line">
+      <div class="line-detail">
+        <div class="top-icon">
+          <%= link_to image_tag("header-logo.jpg", class:"site-icon"), "/" %>
+        </div>
+      <div class="top-menu">
+        <%= link_to 'ABOUT', "#", class:"about"%> 
+        <%= link_to 'CONTACT', "#", class:"contact"%> 
+        <%= link_to 'LANGUAGE', "#", class:"language"%>
+      </div>
+    
 
     <div class="button-trigger", id="button-trigger">
 <div class="avatar-nav", id="avatar-nav">
@@ -32,4 +38,6 @@
     </ul>
   </nav>
       </div>
+    
+    </div>
 </header>
