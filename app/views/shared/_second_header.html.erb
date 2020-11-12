@@ -3,7 +3,7 @@
 <div class="second-line">
       <div class="line-detail">
         <div class="top-icon">
-          <%= link_to image_tag("header-logo.jpg", class:"site-icon"), "/" %>
+          <%= link_to image_tag("header-logo.jpg", class:"site-icon"), posts_path %>
         </div>
       <div class="top-menu">
         <%= link_to 'ABOUT', "#", class:"about"%> 
@@ -24,16 +24,19 @@
   <nav>
     <ul id="lists">
       <li>
-        <%= link_to 'MY PAGE', user_path(current_user.id), id:'list' %>
+        <%= link_to 'My page', user_path(current_user.id), id:'list' %>
       </li>
       <li>
-        <%= link_to 'NEW DAIRY', new_post_path, id:'list' %>
+        <%= link_to 'New diary', new_post_path, id:'list' %>
       </li>
       <li>
-        <%= link_to 'MY MEMOS', user_memos_path(current_user.id), id:'list' %>
+        <%= link_to 'My memos', user_memos_path(current_user.id), id:'list' %>
       </li>
       <li>
-        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, id:'list' %>
+        <%= link_to 'Sign out', destroy_user_session_path, method: :delete, id:'list' %>
+      </li>
+      <li>
+        <%= link_to 'Posts list', posts_path, id:'list' %>
       </li>
     </ul>
   </nav>
