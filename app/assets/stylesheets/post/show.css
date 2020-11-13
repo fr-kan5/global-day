@@ -16,10 +16,12 @@
 
 .title_show {
 text-align: center;
+font-size: 30px;
+font-weight: bold;
 }
 .one-post{
   text-align: center;
-  width: 50%;
+  width: 40%;
   overflow: scroll;
 }
 
@@ -30,15 +32,32 @@ text-align: center;
 .image_show{
   width: 55vh;
   text-align: center;
+  margin-top: 20px;
 }
 
 .show-text {
   word-wrap: normal;
 }
 
+.avatar-post {
+
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+}
 .post-user-name {
   font-weight: bold;
+  text-align: left;
 }
+.link_user_show {
+  text-decoration: none;
+
+}
+
 .show-btn {
   display: flex;
   justify-content: center;
