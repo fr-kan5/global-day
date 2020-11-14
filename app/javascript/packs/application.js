@@ -11,7 +11,7 @@ require("../menu")
 require("../preview")
 require('jquery')
 window.$ = $;
-
+//= require activestorage
 //= require jquery
 //= require jquery_ujs
 
