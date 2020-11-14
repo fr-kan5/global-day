@@ -12,8 +12,8 @@ consumer.subscriptions.create("MemoChannel", {
   received(data) {
     const html = `
     <div class="title-frame">
-    <input id="memo-check-${data.content}" class="memo-check" type="checkbox">
-    <label class="memo-label", for="memo-check-${data.content}">${data.content.title}</label>
+    <input id="memo-check-${data.content.id}" class="memo-check" type="checkbox">
+    <label class="memo-label", for="memo-check-${data.content.id}">${data.content.title}</label>
     <div class="memo-content">
     <p>${data.content.content}</p>
     </div>
@@ -25,7 +25,5 @@ consumer.subscriptions.create("MemoChannel", {
     memos.insertAdjacentHTML('afterbegin', html);
     newMemos.value='';
     newMemo.value='';
-
-
   }
 });
