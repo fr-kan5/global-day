@@ -41,7 +41,6 @@
         </div>
       <% end %>
     </div>
-
 <%# コメント表示部分 %>
     <div class="talk-room">
 
@@ -50,9 +49,11 @@
           <% if @comments.present? %>
             <% @comments.reverse_each do |comment| %>
               <div class='comment-context'>
-                <li><% if current_user.avatar.attached? %>
-          <%= image_tag(comment.user.avatar, class:"avatar-post") %>  
-        <% end %><%= link_to comment.user.name, user_path(comment.user.id) %> ： <%= comment.text %></li>
+                <li>
+                <% if comment.user.avatar.attached? %>
+          <%= image_tag(comment.user.avatar, class:"avatar-post", id:"avatar-post") %>  
+        <% end %>  
+                <%= link_to comment.user.name, user_path(comment.user.id) %> ： <%= comment.text %></li>
               </div>
             <% end %>
           <% else %>
