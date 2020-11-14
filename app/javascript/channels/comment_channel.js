@@ -10,7 +10,7 @@ consumer.subscriptions.create("CommentChannel", {
   },
 
   received(data) {
-    const obj = document.getElementById('avatar-post');
+    const obj = document.getElementById('avatar-img');
     function icon(){
       return obj}
     const html = `
