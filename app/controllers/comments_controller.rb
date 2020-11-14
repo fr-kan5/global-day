@@ -9,8 +9,7 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     @user = @comment.user
-    @avatar = @user.avatar
-    ActionCable.server.broadcast 'comment_channel', content: @comment, user: @user, avatar: @avatar if @comment.save
+    ActionCable.server.broadcast 'comment_channel', content: @comment, user: @user if @comment.save
   end
 
   private

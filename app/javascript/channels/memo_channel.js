@@ -25,7 +25,5 @@ consumer.subscriptions.create("MemoChannel", {
     memos.insertAdjacentHTML('afterbegin', html);
     newMemos.value='';
     newMemo.value='';
-
-
   }
 });
