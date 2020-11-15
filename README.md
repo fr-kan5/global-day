@@ -1,7 +1,8 @@
 # GlobalDay
-![無題123_20201110014332](https://user-images.githubusercontent.com/71579504/99178068-fc61c700-2752-11eb-89e1-17660de32a35.PNG)
-
 SNS上の語学学校をイメージとした英語学習に特化したアプリケーション
+
+![toppage](https://user-images.githubusercontent.com/71579504/99182917-86be2100-277b-11eb-8dc9-153ae2103757.PNG)
+
 
 # 💬　概要
 
