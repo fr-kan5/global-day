@@ -32,7 +32,7 @@ SNS上の語学学校をイメージとした英語学習に特化したアプ�
   
 ⑤ 投稿詳細画面からコメントができる
 　 （コメントは投稿に対しての英語の使い方を指摘するものが望ましいが、交流のために使っても良い）
- '![demo](https://raw.github.com/wiki/liz539z/global-day/gif/comment.gif'
+ ![demo](https://raw.github.com/wiki/liz539z/global-day/gif/comment.gif)
 
 
 ⑥ コメントから得た学びや他者の投稿から得た学びを「My memo」へコピペして管理することができる
