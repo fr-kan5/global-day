@@ -14,12 +14,14 @@ SNS上の語学学校をイメージとした英語学習に特化したアプ�
 指摘されたものはメモを残すことができ復習ができる
 
 # 🌐 App URL
+![Global-day](https://global-day.herokuapp.com/)
 
 # 💻 利用方法
 ① トップページから新規登録・ログイン
 
 ② 一覧画面へ遷移する
-
+![post-to-index](https://gyazo.com/
+https://i.gyazo.com/58d54f1312660025944d30c805a05c3e.mp4)
 ③ 新規投稿は右上アバター写真をクリック → 「New diary」を選択
 　 投稿完了後は一覧画面へ戻る
   ![7c5df226a30881a330dfdc2143ce0065](https://user-images.githubusercontent.com/71579504/99178914-93328180-275b-11eb-838b-412756eae896.gif)
