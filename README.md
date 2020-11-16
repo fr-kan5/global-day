@@ -24,28 +24,25 @@ SNS上の語学学校をイメージとした英語学習に特化したアプ�
 ③ 新規投稿は右上アバター写真をクリック → 「New diary」を選択
 　 投稿完了後は一覧画面へ戻る
 [![Image from Gyazo](https://i.gyazo.com/b50633706f144ad8e9edee35bdead0c1.gif)](https://gyazo.com/b50633706f144ad8e9edee35bdead0c1)
-  ![7c5df226a30881a330dfdc2143ce0065]()
-  ![post-to-index](https://user-images.githubusercontent.com/71579504/99178958-13f17d80-275c-11eb-9430-a386d6e78b6f.gif)
-
+[![Image from Gyazo](https://i.gyazo.com/98224025cb5b2527589230d42d653c76.gif)](https://gyazo.com/98224025cb5b2527589230d42d653c76)
   
 ④ 一覧画面から１つの投稿を選択 → 投稿詳細画面へ遷移する
 　 投稿者本人であれば投稿の編集・削除が投稿詳細画面から可能になる
-  ![post-to-show](https://user-images.githubusercontent.com/71579504/99179105-a8a8ab00-275d-11eb-9cec-6c3e2facdb6d.gif)
+ [![Image from Gyazo](https://i.gyazo.com/47f972d7dea97e1bb4d1397d280dba27.gif)](https://gyazo.com/47f972d7dea97e1bb4d1397d280dba27)
 
   
 ⑤ 投稿詳細画面からコメントができる
 　 （コメントは投稿に対しての英語の使い方を指摘するものが望ましいが、交流のために使っても良い）
- '![demo](https://raw.githubusercontent.com/wiki/liz539z/global-day/gif/comment.gif)'
+  [![Image from Gyazo](https://i.gyazo.com/8e43f278a15fdf4b1d25ccce1e533c58.gif)](https://gyazo.com/8e43f278a15fdf4b1d25ccce1e533c58)
 
 
 ⑥ コメントから得た学びや他者の投稿から得た学びを「My memo」へコピペして管理することができる
  　右上アバター写真をクリック → 「My memo」を選択
-  ![to-memo](https://user-images.githubusercontent.com/71579504/99179203-a5fa8580-275e-11eb-9106-357e9031efaa.gif)
- ![how_to_memo](https://user-images.githubusercontent.com/71579504/99182317-a7847780-2777-11eb-828c-b17e8119de1f.gif)
- 
 ⑦ Memoした履歴のタイトルをクリックするとメモ内容が表示される仕組みとなっている。
 　 タイトルにはわかりやすい記述がおすすめである
-  ![memo-show](https://user-images.githubusercontent.com/71579504/99179456-4ce02100-2761-11eb-83c2-c18731e8ac72.gif)
+  [![Image from Gyazo](https://i.gyazo.com/3272392fdd0ffa386c28e4520b9d56a6.gif)](https://gyazo.com/3272392fdd0ffa386c28e4520b9d56a6)
+  [![Image from Gyazo](https://i.gyazo.com/8610c38cf24535a15c0be1ad81c0aa22.gif)](https://gyazo.com/8610c38cf24535a15c0be1ad81c0aa22)
+ 
 
 # ✅ 課題解決
 | ユーザーストーリーから考える課題                                                        | 課題解決                                         |
