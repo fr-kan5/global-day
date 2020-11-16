@@ -3,7 +3,9 @@ Rails.application.routes.draw do
     registrations: 'users/registrations',
     sessions: 'users/sessions'
   }
-  root to: 'homes#index'
+  devise_scope :user do
+  root :to => 'devise/sessions#new'
+  end
   resources :homes, only: :index
   resources :users, only: :show do
     resources :memos, only:[:index, :create]
