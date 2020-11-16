@@ -20,6 +20,8 @@ SNS上の語学学校をイメージとした英語学習に特化したアプ�
 ① トップページから新規登録・ログイン
 
 ② 一覧画面へ遷移する
+<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" />
+<img src="https://user-images.githubusercontent.com/71579504/99178958-13f17d80-275c-11eb-9430-a386d6e78b6f.gif" width="40" height="40" />
 ![post-to-index](https://user-images.githubusercontent.com/71579504/99178914-93328180-275b-11eb-838b-412756eae896.gif)
 ③ 新規投稿は右上アバター写真をクリック → 「New diary」を選択
 　 投稿完了後は一覧画面へ戻る
