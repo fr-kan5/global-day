@@ -21,7 +21,7 @@
 
 #### `☆ トップページから新規登録・ログイン`
 #### `☆ 一覧画面へ遷移する`<br>
-[![Image from Gyazo](https://i.gyazo.com/27bf342195669c220aa76b757c2f4b6a.gif)](https://gyazo.com/27bf342195669c220aa76b757c2f4b6a)
+[![Image from Gyazo](https://i.gyazo.com/67e454e45438286c28b1a8c9944d9936.gif)](https://gyazo.com/67e454e45438286c28b1a8c9944d9936)
 <br>
 #### `☆ 新規投稿は右上アバター写真をクリック → 「New diary」を選択`
 #### `☆ 投稿完了後は一覧画面へ戻る`<br>
