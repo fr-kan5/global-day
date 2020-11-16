@@ -20,28 +20,28 @@
 # 💻 利用方法
 
 #### `☆ トップページから新規登録・ログイン`
-#### `☆ 一覧画面へ遷移する`
+#### `☆ 一覧画面へ遷移する`<br>
 [![Image from Gyazo](https://i.gyazo.com/27bf342195669c220aa76b757c2f4b6a.gif)](https://gyazo.com/27bf342195669c220aa76b757c2f4b6a)
-
+<br>
 #### `☆ 新規投稿は右上アバター写真をクリック → 「New diary」を選択`
-#### `☆ 投稿完了後は一覧画面へ戻る`
+#### `☆ 投稿完了後は一覧画面へ戻る`<br>
 [![Image from Gyazo](https://i.gyazo.com/b50633706f144ad8e9edee35bdead0c1.gif)](https://gyazo.com/b50633706f144ad8e9edee35bdead0c1)
 [![Image from Gyazo](https://i.gyazo.com/98224025cb5b2527589230d42d653c76.gif)](https://gyazo.com/98224025cb5b2527589230d42d653c76)
-  
+  <br>
 #### `☆ 一覧画面から１つの投稿を選択 → 投稿詳細画面へ遷移する`
-#### `☆ 投稿者本人であれば投稿の編集・削除が投稿詳細画面から可能になる`
+#### `☆ 投稿者本人であれば投稿の編集・削除が投稿詳細画面から可能になる`<br>
  [![Image from Gyazo](https://i.gyazo.com/47f972d7dea97e1bb4d1397d280dba27.gif)](https://gyazo.com/47f972d7dea97e1bb4d1397d280dba27)
-
+<br>
   
 #### `☆ 投稿詳細画面からコメントができる`
-#### `（コメントは投稿に対しての英語の使い方を指摘するものが望ましいが、交流のために使っても良い）`
+#### `（コメントは投稿に対しての英語の使い方を指摘するものが望ましいが、交流のために使っても良い）`<br>
   [![Image from Gyazo](https://i.gyazo.com/8e43f278a15fdf4b1d25ccce1e533c58.gif)](https://gyazo.com/8e43f278a15fdf4b1d25ccce1e533c58)
-
+<br>
 
 #### `☆ コメントから得た学びや他者の投稿から得た学びを「My memo」へコピペして管理することができる`
 #### `☆ 右上アバター写真をクリック → 「My memo」を選択`
 #### `☆ Memoした履歴のタイトルをクリックするとメモ内容が表示される仕組みとなっている。`
-#### `(タイトルにはわかりやすい記述がおすすめである)`
+#### `(タイトルにはわかりやすい記述がおすすめである)`<br>
   [![Image from Gyazo](https://i.gyazo.com/3272392fdd0ffa386c28e4520b9d56a6.gif)](https://gyazo.com/3272392fdd0ffa386c28e4520b9d56a6)
   [![Image from Gyazo](https://i.gyazo.com/8610c38cf24535a15c0be1ad81c0aa22.gif)](https://gyazo.com/8610c38cf24535a15c0be1ad81c0aa22)
  
