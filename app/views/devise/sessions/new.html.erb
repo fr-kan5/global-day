@@ -1,35 +1,54 @@
-<%= render 'shared/header' %>
-<div class="devise">
-<h2 class="title">Log in</h2>
 
-<div class="form">
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-      <div class="name-form">
-  <div class="form-group">
-    <%= f.label "メールアドレス" %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-  </div>
 
-  <div class="form-group">
-    <%= f.label "パスワード" %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+  <div class="home-img" >
+    <%= render 'shared/header' %>
   </div>
-
-  <div class="form-group">
-  <% if devise_mapping.rememberable? %>
-      <%= f.check_box :remember_me %>
-      <%= f.label "REMEMBER ME" %>
+  <div class="main-view">
+    <div class="phrase-box">
+      <div class="phrase">
+        TO POST
+      </div>
+      <div class="phrase">
+        TO NETWORK
+      </div>
     </div>
-  <% end %>
+    
+    <div class="get-user">
+      <div class="user-top">
 
-  <div class="actions">
-    <%= f.submit "Log in", class:"submit-btn" %>
-  </div>
-  </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
-</div>
-</div>
+        <%= link_to 'SIGN IN', new_user_session_path, class: "login" %>
+
+        <%= form_with(model: @user, url: session_path(resource_name), local: true) do |f| %>
+        <div class="login-field">
+          <div class="name-form">
+            <div class="form-group">
+              <%= f.label "Mail" %><br />
+              <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <%= f.label "Password" %><br />
+            <%= f.password_field :password, autocomplete: "current-password" %>
+          </div>
+
+          <div class="form-group">
+
+
+            <div class="actions">
+              <%= f.submit "Log in", class:"submit-btn" %>
+            </div>
+          </div>
+          <% end %>
+        </div>
+
+          <div class="join-us">
+            <p class="sign-up-info">
+              Don't have an account?
+            </p>
+            <%= link_to 'SIGN UP', new_user_registration_path, class: "sign-up" %>
+          </div>
+      
+    </div>
+  </div>
