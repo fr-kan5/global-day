@@ -23,7 +23,7 @@ SNS上の語学学校をイメージとした英語学習に特化したアプ�
 ② 一覧画面へ遷移する
 ③ 新規投稿は右上アバター写真をクリック → 「New diary」を選択
 　 投稿完了後は一覧画面へ戻る
-  ![post-to-show](post-to-show.gif)
+[![Image from Gyazo](https://i.gyazo.com/b50633706f144ad8e9edee35bdead0c1.gif)](https://gyazo.com/b50633706f144ad8e9edee35bdead0c1)
   ![7c5df226a30881a330dfdc2143ce0065]()
   ![post-to-index](https://user-images.githubusercontent.com/71579504/99178958-13f17d80-275c-11eb-9430-a386d6e78b6f.gif)
 
