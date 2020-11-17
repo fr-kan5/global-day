@@ -94,12 +94,19 @@
 
 
 
-# 追加予定機能
+# 🔨 追加予定機能
 
 - メモ機能へ検索機能追加予定
 
+# :octocat: ローカルでの動作方法
 
-
+$ git clone https://github.com/liz539z/global-day.git
+$ cd global-day
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+$ rails s
+👉 http://localhost:3000
 
 # DB設計
 
