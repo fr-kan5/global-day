@@ -98,15 +98,32 @@
 
 - メモ機能へ検索機能追加予定
 
-# :octocat: ローカルでの動作方法
+# 📎  ローカルでの動作方法
 
 $ git clone https://github.com/liz539z/global-day.git
+</br>
 $ cd global-day
+</br>
 $ bundle install
+</br>
 $ rails db:create
+</br>
 $ rails db:migrate
+</br>
 $ rails s
+</br>
 👉 http://localhost:3000
+
+# 🚜 開発環境
+
+- VScode
+- Ruby 2.6.5
+- Rails 6.0.3.4
+- mysql2 0.5.3
+- JavaScript
+- gem 3.0.3
+- heroku 7.46.0
+
 
 # DB設計
 
